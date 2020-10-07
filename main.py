@@ -16,7 +16,10 @@ while(player != 0):
   else:
     print("You miss it (",n,")\n")
     player-=1
-    score=score - min(n,number)
+    if (score > 15) :
+      score=score - 15
+     else:
+        score =0
 
 
   number = n
